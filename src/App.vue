@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Home from './components/Home'
+import Home from './pages/Home'
 
 export default {
   name: 'app',
@@ -15,5 +15,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "~bootstrap/scss/bootstrap.scss";
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+.btn-primary {
+  color: white;
+  background-color: #ff9933;
+  border-color: #ff9933;
+}
 </style>
