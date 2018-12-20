@@ -20,16 +20,34 @@
           <product-card condition="Like New"/>
         </b-col>
       </b-row>
+      <b-pagination
+        align="center"
+        :total-rows="100"
+        v-model="currentPage"
+        hide-goto-end-buttons
+        hide-ellipsis
+        next-text="Next"
+        :per-page="10"
+        variant="secondary"
+      ></b-pagination>
     </b-container>
+    <app-footer/>
   </div>
 </template>
 
 <script>
-import ProductCard from '../components/productCard'
+import ProductCard from "../components/ProductCard";
+import AppFooter from "../common/Footer"
 export default {
   name: "Home",
   components: {
-    ProductCard
+    ProductCard,
+    AppFooter
+  },
+  data() {
+    return {
+      currentPage: 1
+    };
   }
 };
 </script>
