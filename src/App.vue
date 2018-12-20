@@ -26,6 +26,11 @@ export default {
   background-color: #ff9933;
   border-color: #ff9933;
 }
+.btn-primary:hover {
+    color: #fff;
+    background-color: #ff9933;
+    border-color: #ff9933;
+}
 .page-item.active .page-link {
   background-color: #ff9933;
   border-color: #ff9933;
